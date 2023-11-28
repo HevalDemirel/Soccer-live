@@ -1,0 +1,27 @@
+{
+  "name": "soccer-live",
+  "version": "1.0.0",
+  "description": "Livescore for Soccer",
+  "main": "script.js",
+  "scripts": {
+    "start": "concurrently \"npm run scss\" \"live-server\"",
+    "scss": "node-sass --watch styles.scss styles.css"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HevalDemirel/Soccer-live.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HevalDemirel/Soccer-live/issues"
+  },
+  "homepage": "https://github.com/HevalDemirel/Soccer-live#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2"
+  }
+}

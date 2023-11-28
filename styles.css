@@ -1,0 +1,11 @@
+header {
+  background-color: red;
+  height: 60px; }
+  header p {
+    color: yellow; }
+
+main {
+  height: 800px; }
+
+h1 {
+  background-color: aqua; }
