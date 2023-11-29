@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" ></script>
-</head>
-<body>
-    <h1>Soccer Live</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Livescore</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <p>Hevals Livescore</p>
+      <nav>
+        <ul>
+          <li><a href="#">Fotboll</a></li>
+          <li><a href="#">Hockey</a></li>
+          <li><a href="#">Basket</a></li>
+          <li><a href="#">Handboll</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Livescore</h1>
+      <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3" scope="colgroup">Dagens Matcher</th>
+          </tr>
+          <tr>
+            <th class="test" scope="col">Lag 1</th>
+            <th class="test" scope="col">Resultat</th>
+            <th class="test" scope="col">Lag 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="test2" id="team1">Lag</td>
+            <td class="test2" id="result">Resultat</td>
+            <td class="test2" id="team2">Lag</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn-fetch" type="button" onclick="sortData();">Hämta matcher</button>
+    </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Hevals Livescore. Alla rättigheter förbehållna.</p>
+    </footer>
+  </body>
 </html>
