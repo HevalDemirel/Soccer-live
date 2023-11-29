@@ -3,6 +3,7 @@ body {
   padding: 0;
 }
 
+// Header
 header {
   background-color: #0a4989;
 
@@ -45,25 +46,39 @@ header {
   }
 }
 
+// Main content
 main {
-  margin-top: 20px;
   height: 800px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
-  table{
-    width: 100%;
+  h1{
+    margin: 0;
+    color: #ffffff;
+    background-color: #cb0e0e;
+  }
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
-  th, td{
-    border: 1px solid #ddd;
-    padding: 10px;
-  }
-
-  th{
+  th[colspan="3"] {
+    border-top: 0px !important;
     background-color: #0a4989;
     color: white;
+  }
+
+  th, td {
+    border-right: 0px !important;
+    border-left: 0px !important;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
   }
 
   p {
@@ -73,6 +88,17 @@ main {
   }
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-fetch {
+  margin-top: 20px;
+}
+
+// Footer
 footer {
   height: 80px;
   background-color: #0a4989;
@@ -84,3 +110,16 @@ footer {
     color: white;
   }
 }
+
+.test {
+  width: 160px;
+}
+
+.test2 {
+  width: 160px;
+}
+// ta bort kod som ej används
+// städa upp gör de fint
+// uppdatera så att klasserna har bra förklarande namn osv
+// lägg till favicon
+// ta bort console log
