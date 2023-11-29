@@ -35,10 +35,16 @@ main {
   margin-top: 20px;
   height: 800px;
   text-align: center; }
-  main h1 {
-    margin: 0;
-    background-color: aqua;
-    padding: 20px; }
+  main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; }
+  main th, main td {
+    border: 1px solid #ddd;
+    padding: 10px; }
+  main th {
+    background-color: #0a4989;
+    color: white; }
   main p {
     font-size: 18px;
     line-height: 1.6;
